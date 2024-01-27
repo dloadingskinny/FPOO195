@@ -44,14 +44,12 @@ print(numero)
 """
 
 #4.solicitud de datos
-"""
 var1= input("introducir cualquier dato")
 var2= str(input("introducir cadena"))
 var3= int(input("introducir solo enteros"))
 var4= input("introducir solo decimales")
 
 print(var1, var2, var3, var4)
-"""
 #5 booleans, Operadores de comparacion
 """
 print(10>9)
@@ -61,12 +59,13 @@ print(10>=9)
 print(10!=9)
 print(10<=9)
 """
-
-x=1
+#logicos 
+"""x=1
 print(x< 5 and x< 10)
+print(x< 5 or x< 10)
 print(not(x< 5 and x< 10))
 
 x=1
 print(x< 5 & x< 10)
 print(x< 5 | x< 10)
-print(not(x< 5 & x< 10))
+print(not(x< 5 & x< 10))"""
