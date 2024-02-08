@@ -7,9 +7,9 @@ def numEnt(n):
     if n % 2 == 0:
       n //= 2
     else:
-      n = 3 * n + 1
+      n = 3* n + 1
     serie.append(n)
   return serie
-n = int(input("Ingrese cualquier número entero: "))
+n = int(input("Ingrese cualquier numero entero: "))
 serie = numEnt(n)
 print("nuestra serie de Collatz de {} es: {}".format(n, serie))
