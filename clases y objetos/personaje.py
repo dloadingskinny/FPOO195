@@ -3,7 +3,7 @@ class Personaje:
     #atributos de poersonaje 
     especie= "Humano"
     nombre="John"
-    alruta=2.18
+    altura=2.18
     
     #metodos del personaje
     def correr(self,estado):
@@ -18,13 +18,4 @@ class Personaje:
     def recargarArma(self, municion):
         cargador= 25
         cargador= cargador + municion
-        print("Arma recargada al "+ str(cargador)+"%")
- 
- #creamos el objeto de la clase de personaje       
-spartan = Personaje()
-
-print(spartan.nombre)
-print(spartan.nombre)
-print(spartan.nombre)
-print(spartan.nombre)
-        
+        print("Arma recargada al "+ str(cargador)+"%")    

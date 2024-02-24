@@ -1,28 +1,28 @@
 import random
 
-def llenar_lista():
+def gen_lista():
     return [random.randint(10, 20) for _ in range(30)]
 
-def contar_repetidos(lista):
-    return {num: lista.count(num) for num in set(lista)}
+def contar_rep(lst):
+    return {num: lst.count(num) for num in set(lst)}
 
-def eliminar_repetidos(lista):
-    return list(set(lista))
+def elim_rep(lst):
+    return list(set(lst))
 
-def reemplazar_repetidos_con_cero(lista):
-    numeros_unicos = set()
-    nueva_lista = []
-    for num in lista:
-        if num not in numeros_unicos:
-            numeros_unicos.add(num)
-            nueva_lista.append(num)
+def reemplazar_con_0(lst):
+    unicos = set()
+    nueva_lst = []
+    for num in lst:
+        if num not in unicos:
+            unicos.add(num)
+            nueva_lst.append(num)
         else:
-            nueva_lista.append(0)
-    return nueva_lista
+            nueva_lst.append(0)
+    return nueva_lst
 
 def main():
-    lista = llenar_lista()
-    print("Lista generada:", lista)
+    lst = gen_lista()
+    print("Lista generada:", lst)
 
     while True:
         print("\nMenú:")
@@ -34,11 +34,11 @@ def main():
         opcion = input("Elige una opción: ")
 
         if opcion == 'a':
-            print("Números repetidos y sus frecuencias:", contar_repetidos(lista))
+            print("Números repetidos y sus frecuencias:", contar_rep(lst))
         elif opcion == 'b':
-            print("Lista sin números repetidos:", eliminar_repetidos(lista))
+            print("Lista sin números repetidos:", elim_rep(lst))
         elif opcion == 'c':
-            print("Lista con números repetidos reemplazados por 0:", reemplazar_repetidos_con_cero(lista))
+            print("Lista con números repetidos reemplazados por 0:", reemplazar_con_0(lst))
         elif opcion == 'd':
             print("Saliendo del programa...")
             break
