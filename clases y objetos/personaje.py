@@ -1,9 +1,10 @@
 class Personaje:
     
     #atributos de poersonaje 
-    especie= "Humano"
-    nombre="John"
-    altura=2.18
+    def __init__(self,nom,esp,alt) :   
+        self.nombre = nom
+        self.especie = esp
+        self.altura= alt
     
     #metodos del personaje
     def correr(self,estado):
