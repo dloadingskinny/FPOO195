@@ -15,12 +15,12 @@ def addbtn():
     botonrosa.pack()
     
 
-#1.Creamos la ventana
+#1Creamos la ventana
 Ventana = Tk() #uso de POO creando un objeto ventana
 Ventana.title("ejemplo con 3 frames")
 Ventana.geometry("600x400")
 
-#2. colocamos frames de la ventana
+# colocamos frames de la ventana
 seccion1 =Frame(Ventana, bg="Black")
 seccion1.pack(expand= True, fill='both')
 
