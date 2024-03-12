@@ -3,15 +3,14 @@ from tkinter import messagebox
     
         
 class Interfaz:
-    def __init__(self,ventana,generar):
+    def __init__(self,ventana):
         self.ventana=ventana
-        self.generar=generar
         self.ventana.title("GENERADOR PASSWORDS")
         
-        self.Button(self.ventana, text="Generar Contraseña", command=self.generarContraseña)
+        tk.Button(self.ventana, text="Generar Contraseña", command=self.generarContraseña).pack()
         
-    def generarContraaseña(self):
-        longitud=int(input("Ingrese la lomgitud de la contrseña(min. 8): "))
+    def generarContraseña(self):
+        longitud=int(input("Ingrese la longitud de la contrseña(min. 8): ")or 8)
         contrasena= "Contraseña"[:longitud]
         messagebox.showinfo("Contraseña Gnerada: {contrasena}")
     
